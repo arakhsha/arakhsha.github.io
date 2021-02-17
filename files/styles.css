@@ -366,9 +366,10 @@ footer {
 
 .pub_title {
   text-align: justify;
+  line-height: 95%;
   font-size:120%;
   font-weight: bold;
-  margin:0 0 5px;
+  margin:15px 0 5px;
 }
 
 
