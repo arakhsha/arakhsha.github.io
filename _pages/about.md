@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: right
-  image: amin-rakhsha.jpg
+  image: amin-rakhsha.webp
   image_circular: false
   more_info: >
     <p style="display: block; width: 100%; text-align: center; font-family: var(--bs-body-font-family, Arial, sans-serif);">Toronto, Canada</p>
@@ -36,6 +36,10 @@ latest_posts:
 <style>
   .post > article > .clearfix > p:not(:has(br)) {
     text-align: justify;
+  }
+
+  .research-question {
+    font-size: 1.3rem;
   }
 
   @media (max-width: 576px) {
@@ -98,6 +102,7 @@ July 2018–January 2019 · Hong Kong
 </figure>
 
 _What capabilities are needed to solve long-horizon agentic tasks, and which of them is the bottleneck for our model and task?_
+{: .research-question }
 
 With LUMINA, we use a POMDP formulation of agentic tasks to identify a set of critical capabilities and develop an evaluation suite that measures the importance of each capability for a model–task pair. The resulting diagnoses guide targeted model post-training and agentic system design.
 
@@ -125,6 +130,7 @@ With LUMINA, we use a POMDP formulation of agentic tasks to identify a set of cr
 </figure>
 
 _How should we utilize parallel inference to scale LLM reasoning when no ground-truth evaluation is available?_
+{: .research-question }
 
 We propose Majority-of-the-Bests (MoB), an algorithm for selecting among independently generated LLM outputs. MoB uses bootstrapping to become more robust to noisy reward models compared to Best-of-N.
 
@@ -151,7 +157,8 @@ We propose Majority-of-the-Bests (MoB), an algorithm for selecting among indepen
   >
 </figure>
 
-_How can an agent utilize an erroneous model of the environment?_
+_How can an RL agent utilize an erroneous model of the environment?_
+{: .research-question }
 
 In many applications, an approximate model of the environment is available that is not completely accurate: a robotic simulator, a pretrained foundation model, or a misspecified learned model. We develop specialized RL algorithms that can benefit from these models while remaining robust to the model's error.
 
@@ -179,6 +186,7 @@ In many applications, an approximate model of the environment is available that 
 </figure>
 
 _How can we design general and scalable acceleration methods for iterative RL algorithms, analogous to those in optimization?_
+{: .research-question }
 
 Standard iterative RL algorithms can converge slowly as the task horizon grows. We develop accelerated methods with improved convergence rates while retaining comparable per-iteration cost.
 
@@ -206,6 +214,7 @@ Standard iterative RL algorithms can converge slowly as the task horizon grows. 
 </figure>
 
 _How vulnerable are RL agents to adversarial attacks that alter the state transitions or rewards?_
+{: .research-question }
 
 We study the security of RL systems, including training-time attacks that manipulate rewards or transition dynamics. Our work characterizes when an agent can be steered toward an adversarially chosen policy and how costly such attacks must be.
 
