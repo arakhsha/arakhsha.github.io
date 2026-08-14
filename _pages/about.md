@@ -83,6 +83,15 @@ July 2019–January 2021 · Saarbrücken, Germany
 **Chinese University of Hong Kong (CUHK)** — _Research Intern and Collaborator_  
 July 2018–January 2019 · Hong Kong
 
+<h2 id="selected-honors-and-awards" style="margin-top: 2.5rem;">Selected Honors and Awards</h2>
+
+---
+
+- **Silver Medal, International Mathematical Olympiad (IMO)** — July 2016
+- Borealis AI Global Fellowship — May 2022
+- Three University of Toronto Research Awards — 2020, 2021, 2023
+- Iran’s National Elite Foundation Fellowship — 2015–2020
+
 <h2 id="research-directions" style="margin-top: 2.5rem;">Research Topics</h2>
 
 ---
