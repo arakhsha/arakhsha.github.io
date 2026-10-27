@@ -99,6 +99,8 @@ jobs:
           bundle exec jekyll build
           test -s _site/da_report.html
           cmp da_report.html _site/da_report.html
+          test -s _site/assets/pdf/sane_website_20261027.pdf
+          cmp assets/pdf/sane_website_20261027.pdf _site/assets/pdf/sane_website_20261027.pdf
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
