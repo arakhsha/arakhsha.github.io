@@ -101,7 +101,7 @@ July 2018–January 2019 · Hong Kong
 <figure style="width: 70%; margin: 1rem auto 1.5rem;">
   <img
     src="{{ '/assets/img/lumina.webp' | relative_url }}"
-    alt="Comparison of conventional and specialized model-based planners"
+    alt="Overview of LUMINA loop."
     width="110"
     height="550"
     loading="lazy"
@@ -124,24 +124,24 @@ With LUMINA, we use a POMDP formulation of agentic tasks to identify a set of cr
 
 </div>
 
-<h3 style="margin-top: 2rem;font-weight: bold;">Parallel Test-time Scaling of LLM Reasoning</h3>
+<h3 style="margin-top: 2rem;font-weight: bold;">Test-time Scaling of LLM Reasoning</h3>
 
 <figure style="width: 70%; margin: 1rem auto 1.5rem;">
   <img
-    src="{{ '/assets/img/mob.webp' | relative_url }}"
-    alt="Preview of the developed agent evaluation framework"
+    src="{{ '/assets/img/repeated_sampling.webp' | relative_url }}"
+    alt="Overview of repeated sampling for test-time scaling of LLM reasoning."
     width="1500"
-    height="750"
+    height="600"
     loading="lazy"
     decoding="async"
     style="display: block; width: 100%; height: auto;"
   >
 </figure>
 
-_How should we utilize parallel inference to scale LLM reasoning when no ground-truth evaluation is available?_
+_How can we scale LLM reasoning through repeated sampling both robustly and cost-efficiently?_
 {: .research-question }
 
-We propose Majority-of-the-Bests (MoB), an algorithm for selecting among independently generated LLM outputs. MoB uses bootstrapping to become more robust to noisy reward models compared to Best-of-N.
+Scaling test-time compute via repeated sampling faces two key challenges: vulnerability to noisy reward models and high inference costs. To improve accuracy under noisy rewards, we propose Majority-of-the-Bests (MoB), which uses bootstrapping to make reward-guided selection more robust to rewards' noise. To reduce inference cost, we introduce SANE, a nonparametric, training-free early-stopping algorithm that works with a general class of black-box selectors (including Self-Consistency, Best-of-N, and Weighted Best-of-N) to dynamically adapt the sample budget per query.
 
 <div class="publications">
 
